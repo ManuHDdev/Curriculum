@@ -1,0 +1,463 @@
+/* Variables para colores y fuentes */
+:root {
+    --primary-color: #1d2939;
+    --secondary-color: #3481e8;
+    --text-color: #333;
+    --light-text: #fff;
+    --gray-text: #666;
+    --accent-color: #2e4666;
+    --highlight-bg: #e6f3ff;
+    --highlight-border: #b3d9ff;
+    --success-color: #22c55e;
+    --border-radius: 5px;
+    --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --light-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    --transition: all 0.3s ease;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f7fa;
+    color: var(--text-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    transition: var(--transition);
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+/* Estructura principal */
+.cv-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: var(--box-shadow);
+}
+
+/* Sidebar */
+.sidebar {
+    width: 30%;
+    background-color: var(--primary-color);
+    padding: 2rem;
+    color: var(--light-text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid var(--secondary-color);
+    margin-bottom: 1.5rem;
+    object-fit: cover;
+}
+
+.sidebar-section {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.sidebar-heading {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.sidebar-heading::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: var(--secondary-color);
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.contact-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.8rem;
+}
+
+.contact-text {
+    font-size: 0.9rem;
+}
+
+/* Habilidades técnicas mejoradas */
+.skill-group {
+    margin-bottom: 1.2rem;
+}
+
+.skill-category {
+    color: var(--secondary-color);
+    font-size: 0.95rem;
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+    display: block;
+}
+
+.skill-list {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Formación mejorada */
+.education-title {
+    color: var(--secondary-color);
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+.education-specialty {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+    font-style: italic;
+}
+
+.education-institution {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.education-year {
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+/* Contenido principal */
+.main-content {
+    width: 70%;
+    padding: 2.5rem;
+}
+
+.header-section {
+    margin-bottom: 2rem;
+}
+
+.name-title {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.job-title-main {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.section-divider {
+    height: 3px;
+    background-color: var(--accent-color);
+    margin: 0.8rem 0 1.5rem 0;
+    width: 100%;
+    border-radius: var(--border-radius);
+}
+
+.main-section {
+    margin-bottom: 2.5rem;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    margin-bottom: 1.2rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #eaeaea;
+    font-weight: bold;
+}
+
+/* Perfil profesional */
+.profile-description {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+/* Experiencia profesional mejorada */
+.job-item {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.job-item:last-child {
+    border-bottom: none;
+}
+
+.highlighted-job {
+    background-color: var(--highlight-bg);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--secondary-color);
+    position: relative;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+}
+
+.job-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.job-date {
+    color: var(--gray-text);
+    font-style: italic;
+    font-size: 0.95rem;
+}
+
+.job-company {
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.portfolio-link {
+    color: var(--light-text);
+    font-weight: 600;
+    margin-top: 0.5rem;
+    display: inline-block;
+}
+
+/* Highlight del proyecto */
+.project-highlight {
+    background-color: rgba(34, 197, 94, 0.1);
+    border: 1px solid rgba(34, 197, 94, 0.3);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.project-name {
+    color: var(--success-color);
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+.project-status {
+    font-size: 0.85rem;
+    color: var(--success-color);
+    font-weight: 600;
+}
+
+.job-description {
+    margin-top: 1rem;
+}
+
+.job-description h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+}
+
+.job-description ul {
+    padding-left: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.job-description li {
+    margin-bottom: 0.6rem;
+    line-height: 1.6;
+}
+
+.tech-used {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ddd;
+    font-style: italic;
+    color: var(--gray-text);
+}
+
+/* Proyectos destacados */
+.project-item {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border: 1px solid #eaeaea;
+    border-radius: var(--border-radius);
+    background-color: #fafafa;
+}
+
+.featured-project {
+    border-color: var(--success-color);
+    background-color: rgba(34, 197, 94, 0.05);
+    position: relative;
+}
+
+.project-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: var(--primary-color);
+}
+
+.production-badge {
+    display: inline-block;
+    background-color: var(--success-color);
+    color: white;
+    padding: 0.2rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.project-description {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.project-collaboration {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    background-color: rgba(52, 129, 232, 0.05);
+    border-left: 3px solid var(--secondary-color);
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+}
+
+.project-tech-note {
+    margin-bottom: 1rem;
+    font-style: italic;
+    color: var(--gray-text);
+}
+
+.project-link {
+    display: inline-block;
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+.project-link:hover {
+    color: var(--accent-color);
+}
+
+/* Competencias clave */
+.competencies-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.competency-item {
+    padding: 1.2rem;
+    border: 1px solid #eaeaea;
+    border-radius: var(--border-radius);
+    background-color: #fafafa;
+}
+
+.competency-item h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.6rem;
+    font-size: 1rem;
+}
+
+.competency-item p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--gray-text);
+}
+
+.footer {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+    .cv-container {
+        flex-direction: column;
+    }
+
+    .sidebar,
+    .main-content {
+        width: 100%;
+    }
+
+    .sidebar {
+        padding-bottom: 1rem;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .main-content {
+        padding: 1.5rem;
+    }
+
+    .name-title {
+        font-size: 2rem;
+    }
+
+    .job-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .job-date {
+        margin-top: 0.3rem;
+    }
+
+    .competencies-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media print {
+    .salto {
+        margin-top: 2rem;
+        page-break-before: always;
+    }
+}
