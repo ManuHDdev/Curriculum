@@ -10,9 +10,19 @@
         :root {
             --primary-color: #e0affe;
             --secondary-color: #88008f;
-            --accent-color: #e0affe;
+            --accent-color: #88008f;
             --highlight-bg: #500059;
             --highlight-border: #500059;
+            --sidebar-text-color: #000000;
+            --sidebar-muted-text: #111827;
+            --page-background: #f5f7fa;
+            --card-background: #ffffff;
+            --tag-bg: #f4d4f6;
+            --tag-border: #c865cf;
+            --tag-text: #1f1720;
+            --module-bg: #f6ebf7;
+            --module-border: #d9b5dd;
+            --module-text: #111111;
         }
 
         /* ── Cursos compactos (igual que luisa.html) ── */
@@ -45,9 +55,10 @@
         }
         .course-module {
             font-size: 0.78rem;
-            color: black;
+            color: var(--module-text);
             padding: 0.1rem 0.5rem;
-            border: 1px solid #c8ebe8;
+            background-color: var(--module-bg);
+            border: 1px solid var(--module-border);
             border-radius: 10px;
         }
 
@@ -87,11 +98,11 @@
         }
         .competency-tag {
             font-size: 0.76rem;
-            background-color: rgba(157, 42, 134, 0.2);
-            color: rgba(0, 0, 0, 0.95);
+            background-color: var(--tag-bg);
+            color: var(--tag-text);
             padding: 0.18rem 0.5rem;
             border-radius: 12px;
-            border: 1px solid rgba(142, 42, 157, 0.5);
+            border: 1px solid var(--tag-border);
         }
 
         /* ── Espaciado experiencia ── */
@@ -139,8 +150,13 @@
             .cv-container { box-shadow: none; }
         }
     </style>
+    <link rel="stylesheet" href="cv-editor.css">
 </head>
-<body>
+<body data-cv-key="victoria-farmacia" data-cv-version="1" data-cv-label="Victoria Farmacia">
+    <nav class="cv-page-nav" aria-label="Navegación entre currículums de Victoria">
+        <a class="cv-page-nav-link" href="index.html">CV hospitalario</a>
+        <a class="cv-page-nav-link is-active" href="victoria_farmacia.html" aria-current="page">CV oficina de farmacia</a>
+    </nav>
     <div class="cv-container">
         <div class="sidebar">
             <img class="profile-img" src="imagenes/victoria.jpg" alt="Victoria Horrillo González">
@@ -336,5 +352,6 @@
     <!-- <div class="footer">
         <p>&copy; <script>document.write(new Date().getFullYear());</script> Victoria Horrillo González | Farmacéutica</p>
     </div> -->
+    <script src="cv-editor.js"></script>
 </body>
 </html>
