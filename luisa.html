@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luisa Diestro Diestro - Atención a Personas Dependientes</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* ── Cursos compactos ── */
+        .course-item {
+            display: flex;
+            flex-direction: column;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eaeaea;
+        }
+        .course-item:last-child {
+            border-bottom: none;
+        }
+        .course-name {
+            font-weight: 600;
+            color: var(--primary-color);
+            font-size: 0.95rem;
+        }
+        .course-meta {
+            font-size: 0.85rem;
+            color: var(--gray-text);
+            margin-top: 0.15rem;
+        }
+        .job-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+
+        /* ── Sin sombras (impresión limpia) ── */
+        * {
+            text-shadow: none !important;
+            box-shadow: none !important;
+        }
+
+        /* ── Sidebar claro para impresión ── */
+        .sidebar {
+            background-color: #f0f4f8;
+            color: #1d2939;
+            border-right: 2px solid #dde3ea;
+        }
+        .sidebar-heading {
+            color: #2e4666;
+        }
+        .sidebar-heading::after {
+            background-color: #2e4666;
+        }
+        .skill-category {
+            color: #2e4666;
+        }
+        .skill-list,
+        .contact-text,
+        .education-specialty,
+        .education-institution,
+        .education-year {
+            color: #333;
+        }
+        .contact-text a,
+        .portfolio-link {
+            color: #2e4666;
+        }
+        .education-title {
+            color: #2e4666;
+        }
+
+        /* ── Iconos sidebar → azul oscuro ── */
+        .sidebar .contact-icon {
+            filter: brightness(0) saturate(100%) invert(20%) sepia(30%) saturate(900%) hue-rotate(185deg) brightness(85%);
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <div class="sidebar">
+            <img class="profile-img" src="imagenes/luisa.jpeg" alt="Luisa Diestro Diestro">
+
+            <div class="sidebar-section">
+                <h2 class="sidebar-heading">Contacto</h2>
+                <div class="contact-item">
+                    <object class="contact-icon" data="iconos/phone.svg" type="image/svg+xml"></object>
+                    <span class="contact-text">610374805</span>
+                </div>
+                <div class="contact-item">
+                    <object class="contact-icon" data="iconos/map-pin.svg" type="image/svg+xml"></object>
+                    <span class="contact-text">La Coronada, Badajoz</span>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h2 class="sidebar-heading">Información adicional</h2>
+                <div class="contact-item">
+                    <object class="contact-icon" data="iconos/carne.svg" type="image/svg+xml"></object>
+                    <span class="contact-text">Carnet de conducir B</span>
+                </div>
+                <div class="contact-item">
+                    <object class="contact-icon" data="iconos/icons8-car-30.png"></object>
+                    <span class="contact-text">Vehículo propio</span>
+                </div>
+                <div class="contact-item">
+                    <object class="contact-icon" data="iconos/map-pin.svg" type="image/svg+xml"></object>
+                    <span class="contact-text">Disponibilidad de desplazamiento</span>
+                </div>
+                <div class="contact-item">
+                    <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2e4666"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                    <span class="contact-text">Incorporación inmediata</span>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h2 class="sidebar-heading">Habilidades</h2>
+                <div class="skill-group">
+                    <h4 class="skill-category">Atención a Personas</h4>
+                    <p class="skill-list">Cuidado de personas mayores y dependientes, atención especializada en Alzheimer y otras demencias, acompañamiento y apoyo emocional, higiene y asistencia en actividades de la vida diaria</p>
+                </div>
+                <div class="skill-group">
+                    <h4 class="skill-category">Educación y Acción Social</h4>
+                    <p class="skill-list">Dinamización sociocultural, diseño y coordinación de actividades de ocio, concienciación medioambiental, gestión de grupos</p>
+                </div>
+                <div class="skill-group">
+                    <h4 class="skill-category">Administración y Comercio</h4>
+                    <p class="skill-list">Operaciones auxiliares administrativas, atención al cliente, gestión de ventas, archivo y gestión documental</p>
+                </div>
+                <div class="skill-group">
+                    <h4 class="skill-category">Informática e Internet</h4>
+                    <p class="skill-list">Navegación por internet, procesador de textos (Microsoft Word), manejo de correo electrónico</p>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h2 class="sidebar-heading">Formación Académica</h2>
+                <h4 class="education-title">Graduado Escolar</h4>
+                <p class="education-institution">Centro de Educación Permanente de Adultos "Medardo Múñiz"</p>
+                <p class="education-specialty">Villanueva de la Serena, 1994</p>
+            </div>
+
+            <div class="sidebar-section">
+                <h2 class="sidebar-heading">Idiomas</h2>
+                <p class="contact-text"><strong>Español:</strong> Nativo</p>
+            </div>
+
+            <div class="sidebar-section">
+                
+            </div>
+
+            <div class="sidebar-section">
+                <h2 class="sidebar-heading">Competencias Clave</h2>
+                <div class="skill-group">
+                    <h4 class="skill-category">Empatía y Trato Humanizado</h4>
+                    <p class="skill-list">Capacidad para generar vínculos de confianza con personas en situaciones de vulnerabilidad, priorizando siempre su bienestar y dignidad.</p>
+                </div>
+                <div class="skill-group">
+                    <h4 class="skill-category">Adaptabilidad y Polivalencia</h4>
+                    <p class="skill-list">Experiencia en perfiles profesionales variados (atención sanitaria, trabajo social, comercio y administración) con capacidad de integración rápida en nuevos entornos.</p>
+                </div>
+                <div class="skill-group">
+                    <h4 class="skill-category">Responsabilidad y Compromiso</h4>
+                    <p class="skill-list">Disponibilidad inmediata, puntualidad y actitud proactiva. Dispuesta a asumir nuevas responsabilidades y seguir formándose.</p>
+                </div>
+                <div class="skill-group">
+                    <h4 class="skill-category">Trabajo en Equipo</h4>
+                    <p class="skill-list">Experiencia colaborando con equipos multidisciplinares en entornos municipales, sanitarios y comerciales, manteniendo una comunicación clara y un trato positivo.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="header-section">
+                <h1 class="name-title">Luisa Diestro Diestro</h1>
+                <p class="job-title-main">Atención a Personas Dependientes | Monitora Sociocultural | Auxiliar Administrativa</p>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="main-section">
+                <h2 class="section-title">Perfil Profesional</h2>
+                <p class="profile-description">
+                    Soy una persona <strong>comprometida con el bienestar de los demás</strong>, con experiencia acreditada en la atención a personas mayores y dependientes, la dinamización sociocultural y el apoyo administrativo.
+                    Mi formación especializada en <strong>Alzheimer y cuidados a personas en situación de dependencia</strong>, sumada a años de trabajo en contextos muy distintos — desde ayuntamientos hasta asesorías y comercios — me han hecho un perfil versátil, resolutivo y orientado a las personas.
+                    Valoro el trato cercano, la escucha activa y la responsabilidad diaria como pilares fundamentales en cualquier puesto que desempeño.
+                    Busco una oportunidad donde seguir creciendo profesionalmente y aportar todo lo aprendido a un equipo o institución que cuide de quienes más lo necesitan.
+                </p>
+            </div>
+
+            <div class="main-section">
+                <h2 class="section-title">Experiencia Profesional</h2>
+
+                <div class="job-item">
+                    <div class="job-header">
+                        <h3 class="job-title">Dependienta en Tienda de Muebles</h3>
+                        <span class="job-date">2007 – 2009 (3 años)</span>
+                    </div>
+                    <p class="job-company">Muebles Horrillo C.B. | La Coronada, Badajoz</p>
+                    <div class="job-description">
+                        <ul>
+                            <li>Atención y asesoramiento personalizado a clientes en sala de exposición.</li>
+                            <li>Gestión de ventas, cobros y seguimiento postventa.</li>
+                            <li>Organización del espacio comercial y control básico de stock.</li>
+                            <li>Resolución de incidencias con clientes, manteniendo siempre un trato cordial y profesional.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="job-item">
+                    <div class="job-header">
+                        <h3 class="job-title">Monitora Sociocultural</h3>
+                        <span class="job-date">2005 (1 año)</span>
+                    </div>
+                    <p class="job-company">Ayuntamiento de La Coronada | La Coronada, Badajoz</p>
+                    <div class="job-description">
+                        <ul>
+                            <li>Planificación y coordinación de actividades culturales, recreativas y de ocio para la comunidad local.</li>
+                            <li>Dinamización de grupos con perfiles diversos, adaptando las actividades a las necesidades de cada colectivo.</li>
+                            <li>Gestión de recursos y comunicación con las áreas municipales implicadas.</li>
+                            <li>Fomento de la participación ciudadana y la cohesión social en el municipio.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="job-item">
+                    <div class="job-header">
+                        <h3 class="job-title">Prácticas en Centro de Alzheimer</h3>
+                        <span class="job-date">2013 (160 horas)</span>
+                    </div>
+                    <p class="job-company">AFAD | Villanueva de la Serena, Badajoz</p>
+                    <div class="job-description">
+                        <ul>
+                            <li>Apoyo en la atención diaria a personas con Alzheimer y otras demencias.</li>
+                            <li>Colaboración con el equipo de cuidadores en rutinas de higiene, alimentación y estimulación cognitiva.</li>
+                            <li>Acompañamiento emocional a usuarios y comunicación empática con sus familias.</li>
+                            <li>Aplicación práctica de los protocolos aprendidos durante la formación especializada.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="job-item">
+                    <div class="job-header">
+                        <h3 class="job-title">Personal de Mantenimiento de Vías Públicas</h3>
+                        <span class="job-date">2014 (1 mes)</span>
+                    </div>
+                    <p class="job-company">Ayuntamiento de La Coronada | La Coronada, Badajoz</p>
+                    <div class="job-description">
+                        <ul>
+                            <li>Labores de mantenimiento y acondicionamiento del espacio público municipal.</li>
+                            <li>Trabajo en equipo bajo la coordinación del servicio de obras del ayuntamiento.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="job-item">
+                    <div class="job-header">
+                        <h3 class="job-title">Prácticas en Asesoría</h3>
+                        <span class="job-date">2015 (40 horas)</span>
+                    </div>
+                    <p class="job-company">Asesoría Caballero Paredes | Don Benito, Badajoz</p>
+                    <div class="job-description">
+                        <ul>
+                            <li>Apoyo en tareas administrativas generales: recepción, archivo documental y atención a clientes.</li>
+                            <li>Manejo de herramientas ofimáticas para la gestión de documentación.</li>
+                            <li>Familiarización con los procesos y flujos de trabajo propios de una asesoría.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-section">
+                <h2 class="section-title">Formación Complementaria</h2>
+
+                <div class="course-item">
+                    <span class="course-name">Atención Especializada en Alzheimer y Otras Demencias</span>
+                    <span class="course-meta">Universidad Popular Felipe Trigo — Villanueva de la Serena | 400 horas · 2013</span>
+                </div>
+                <div class="course-item">
+                    <span class="course-name">Cuidadora de Personas Dependientes en Centros de Atención a Personas Mayores</span>
+                    <span class="course-meta">Ayuntamiento de La Coronada | 120 horas · 2014</span>
+                </div>
+                <div class="course-item">
+                    <span class="course-name">Operaciones Auxiliares de Servicios Administrativos y Generales</span>
+                    <span class="course-meta">Ayuntamiento de La Coronada | 400 horas · 2015</span>
+                </div>
+                <div class="course-item">
+                    <span class="course-name">Monitor Sociocultural</span>
+                    <span class="course-meta">Junta de Extremadura | 300 horas · 2003</span>
+                </div>
+                <div class="course-item">
+                    <span class="course-name">Monitor de Nuevas Tecnologías Aplicadas al Ocio</span>
+                    <span class="course-meta">Ayuntamiento de La Coronada y CEDER La Serena | 80 horas · 2004</span>
+                </div>
+                <div class="course-item">
+                    <span class="course-name">Monitor Medioambiental</span>
+                    <span class="course-meta">Ayuntamiento de La Coronada y CEDER La Serena | 80 horas · 2004</span>
+                </div>
+                <div class="course-item">
+                    <span class="course-name">Manipulador de Alimentos</span>
+                    <span class="course-meta">Academia Multienseñanzas — Villanueva de la Serena · 2013</span>
+                </div>
+                <div class="course-item">
+                    <span class="course-name">Estética — Programa de Inserción Socio-Educativa</span>
+                    <span class="course-meta">Ayuntamiento de La Coronada | 10 horas · 2000</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; <script>document.write(new Date().getFullYear());</script> Luisa Diestro Diestro | Atención a Personas Dependientes</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victoria Horrillo González - Farmacéutica</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* ── Paleta sanitaria ── */
+        :root {
+            --primary-color: #e0affe;
+            --secondary-color: #88008f;
+            --accent-color: #e0affe;
+            --highlight-bg: #500059;
+            --highlight-border: #500059;
+        }
+
+        /* ── Cursos compactos (igual que luisa.html) ── */
+        .course-item {
+            display: flex;
+            flex-direction: column;
+            padding: 0.4rem 0;
+            border-bottom: 1px solid #eaeaea;
+        }
+        .course-item:last-child {
+            border-bottom: none;
+        }
+        .course-name {
+            font-weight: 600;
+            color: var(--secondary-color);
+            font-size: 0.92rem;
+        }
+        .course-meta {
+            font-size: 0.82rem;
+            color: var(--gray-text);
+            margin-top: 0.1rem;
+        }
+
+        /* ── Módulos dentro de un curso ── */
+        .course-modules {
+            margin: 0.3rem 0 0 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.25rem 0.6rem;
+        }
+        .course-module {
+            font-size: 0.78rem;
+            color: black;
+            padding: 0.1rem 0.5rem;
+            border: 1px solid #c8ebe8;
+            border-radius: 10px;
+        }
+
+        /* ── Separador de grupos de formación ── */
+        .training-group-title {
+            font-size: 0.88rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+            margin: 1rem 0 0.3rem 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 1px solid #c8ebe8;
+            padding-bottom: 0.2rem;
+        }
+
+        /* ── Formación académica sidebar ── */
+        .edu-item {
+            margin-bottom: 0.9rem;
+        }
+        .edu-item .edu-degree {
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+            line-height: 1.3;
+        }
+        .edu-item .edu-detail {
+            font-size: 0.82rem;
+            color: rgba(0, 0, 0, 0.85);
+        }
+
+        /* ── Competencias como tags ── */
+        .competency-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+            margin-top: 0.3rem;
+        }
+        .competency-tag {
+            font-size: 0.76rem;
+            background-color: rgba(157, 42, 134, 0.2);
+            color: rgba(0, 0, 0, 0.95);
+            padding: 0.18rem 0.5rem;
+            border-radius: 12px;
+            border: 1px solid rgba(142, 42, 157, 0.5);
+        }
+
+        /* ── Espaciado experiencia ── */
+        .job-item {
+            margin-bottom: 1.6rem;
+            padding-bottom: 1.5rem;
+        }
+
+        .sidebar {
+            color: black;
+        }
+
+        /* ── Iconos de contacto en color teal del CV ── */
+        .sidebar .contact-icon {
+            filter: brightness(0) invert(56%) sepia(40%) saturate(600%) hue-rotate(130deg) brightness(1.1);
+        }
+
+        /* ── Overrides de color ── */
+        .sidebar-heading::after {
+            background-color: var(--secondary-color);
+        }
+        .sidebar-heading {
+            color: var(--secondary-color);
+        }
+        .section-divider {
+            background-color: var(--secondary-color);
+        }
+        .job-company {
+            color: var(--secondary-color);
+        }
+        a {
+            color: var(--secondary-color);
+        }
+
+        p.skill-list {
+            color: black;
+        }
+
+        .name-title, .section-title, .job-title {
+            color: var(--secondary-color);
+        }
+
+        @media print {
+            body { background-color: white; }
+            .cv-container { box-shadow: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <div class="sidebar">
+            <img class="profile-img" src="imagenes/victoria.jpg" alt="Victoria Horrillo González">
+
+            <div class="sidebar-section">
+                <h2 class="sidebar-heading">Contacto</h2>
+                <div class="contact-item">
+                    <!-- <object class="contact-icon" data="iconos/phone.svg" type="image/svg+xml"></object> -->
+                    <span class="contact-text">699 455 688</span>
+                </div>
+                <div class="contact-item">
+                    <!-- <object class="contact-icon" data="iconos/mail.svg" type="image/svg+xml"></object> -->
+                    <span class="contact-text">victhorr222@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <!-- <object class="contact-icon" data="iconos/map-pin.svg" type="image/svg+xml"></object> -->
+                    <span class="contact-text">El Limonar (Málaga)</span>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h2 class="sidebar-heading">Competencias clave</h2>
+                <div class="competency-tags">
+                    <span class="competency-tag">Atención farmacéutica</span>
+                    <span class="competency-tag">Consejo farmacéutico</span>
+                    <span class="competency-tag">Uso racional del medicamento</span>
+                    <span class="competency-tag">SPD</span>
+                    <span class="competency-tag">Dispensación y validación de recetas</span>
+                    <span class="competency-tag">Receta electrónica</span>
+                    <span class="competency-tag">Control de estupefacientes</span>
+                    <span class="competency-tag">Dermofarmacia</span>
+                    <span class="competency-tag">Nutrición y complementos</span>
+                    <span class="competency-tag">Fitoterapia</span>
+                    <span class="competency-tag">Gestión de stock y caducidades</span>
+                    <span class="competency-tag">Formulación magistral</span>
+                    <span class="competency-tag">BOT PLUS</span>
+                    <span class="competency-tag">Educación sanitaria</span>
+                    <span class="competency-tag">Gestión de equipo</span>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h2 class="sidebar-heading">Formación académica</h2>
+
+                <div class="edu-item">
+                    <p class="edu-degree">Licenciada en Farmacia</p>
+                    <p class="edu-detail">Universidad de Salamanca</p>
+                    <p class="edu-detail">1986 – 1991</p>
+                </div>
+
+                <div class="edu-item">
+                    <p class="edu-degree">Máster en Industria Farmacéutica</p>
+                    <p class="edu-detail">CESIF, Madrid</p>
+                    <p class="edu-detail">1993</p>
+                </div>
+
+                <div class="edu-item">
+                    <p class="edu-degree">Prácticas tuteladas</p>
+                    <p class="edu-detail">Caen, Francia</p>
+                    <p class="edu-detail">1992</p>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h2 class="sidebar-heading">Informática</h2>
+                <div class="skill-group">
+                    <h4 class="skill-category">Ofimática</h4>
+                    <p class="skill-list">Microsoft Office 365, Excel nivel avanzado</p>
+                </div>
+                <div class="skill-group">
+                    <h4 class="skill-category">Gestión de Farmacia</h4>
+                    <p class="skill-list">Nixfarma, Farmatic, BOT PLUS</p>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h2 class="sidebar-heading">Idiomas</h2>
+                <p class="contact-text"><strong>Español:</strong> Nativo</p>
+                <p class="contact-text"><strong>Inglés:</strong> Nivel básico</p>
+                <p class="contact-text"><strong>Francés:</strong> Nivel funcional</p>
+            </div>
+
+        </div>
+
+        <div class="main-content">
+            <div class="header-section">
+                <h1 class="name-title">Victoria Horrillo González</h1>
+                <p class="job-title-main">Farmacéutica | Especialista en Oficina de Farmacia</p>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="main-section">
+                <h2 class="section-title">Perfil Profesional</h2>
+                <p class="profile-description">
+                    <strong>Farmacéutica colegiada</strong> con 25 años de ejercicio profesional como titular en oficina de farmacia. A lo largo de mi trayectoria he desarrollado un dominio amplio y profundo de todos los aspectos de la farmacia comunitaria: dispensación, consejo farmacéutico, seguimiento farmacoterapéutico, dermofarmacia, nutrición, fitoterapia y gestión integral del establecimiento.
+                    Mi experiencia al frente de tres farmacias me ha dotado de una visión completa del servicio al paciente y de la dinámica diaria de una oficina de farmacia. Estoy en un momento de plena actualización formativa, con cursos recientes en nutrición, dermofarmacia, salud femenina y SPD, y me ilusiona poner toda esta experiencia al servicio de un nuevo equipo, aportando desde el primer día y contribuyendo a ofrecer la mejor atención posible a los pacientes.
+                </p>
+            </div>
+
+            <div class="main-section">
+                <h2 class="section-title">Experiencia Profesional</h2>
+
+                <div class="job-item">
+                    <div class="job-header">
+                        <h3 class="job-title">Titular de Oficina de Farmacia</h3>
+                        <span class="job-date">1993 – 2023</span>
+                    </div>
+                    <p class="job-company">Farmacia Arganzuela, Madrid (2021-2023) · Farmacia Aluche, Madrid (1999-2021) · Farmacia Plasenzuela, Cáceres (1993-1999)</p>
+                    <div class="job-description">
+                        <p style="margin-bottom: 0.8rem; text-align: justify;">
+                            Más de 25 años al frente de la gestión integral de oficinas de farmacia, con responsabilidad directa tanto en la atención clínica al paciente como en la dirección del establecimiento. Las tareas desarrolladas de forma continuada incluyen:
+                        </p>
+                        <ul>
+                            <li><strong>Dispensación y validación de recetas</strong>, incluyendo receta electrónica, estupefacientes y psicotrópicos, con control del libro recetario.</li>
+                            <li><strong>Consejo farmacéutico y seguimiento farmacoterapéutico</strong> individualizado, con especial atención al paciente polimedicado, crónico y al uso racional del medicamento.</li>
+                            <li><strong>Implantación de SPD</strong> (Sistema Personalizado de Dosificación) como herramienta de adherencia y seguridad en la medicación.</li>
+                            <li><strong>Asesoramiento en dermofarmacia, nutrición, fitoterapia y salud femenina</strong>, con formación activa y continuada en estas áreas.</li>
+                            <li><strong>Gestión de stock, caducidades y trazabilidad</strong> de medicamentos; control de pedidos y negociación con proveedores y laboratorios.</li>
+                            <li><strong>Dirección y coordinación del equipo</strong> de auxiliares y técnicos de farmacia.</li>
+                            <li><strong>Educación sanitaria activa</strong> a pacientes en patologías crónicas, nutrición, dermatología y salud bucodental.</li>
+                            <li><strong>Análisis de compras, gastos y facturación</strong> de recetas. Manejo de BOT PLUS, Nixfarma y Farmatic.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+            <div class="main-section">
+                <h2 class="section-title">Formación Continuada</h2>
+
+                <p class="training-group-title">Farmacoterapia y clínica</p>
+
+                <div class="course-item">
+                    <span class="course-name">Cómo implantar un Sistema Personalizado de Dosificación en la Oficina de Farmacia</span>
+                    <span class="course-meta">Feb – Mar 2025</span>
+                </div>
+                <div class="course-item">
+                    <span class="course-name">Programa de Formación en Adicciones</span>
+                    <span class="course-meta">Feb - May 2025</span>
+                </div>
+                <div class="course-item">
+                    <span class="course-name">Consejo Farmacéutico en Salud Bucodental</span>
+                    <span class="course-meta">Abr 2025</span>
+                </div>
+                <div class="course-item">
+                    <span class="course-name">Curso Salud femenina</span>
+                    <span class="course-meta">Jun – Jul 2025</span>
+                </div>
+
+                <p class="training-group-title">Nutrición y micronutrición</p>
+
+                <div class="course-item">
+                    <span class="course-name">Especialización en Consejo Nutricional y Complementos Nutricionales en Oficina de Farmacia</span>
+                    <span class="course-meta">Abr 2024 – Oct 2025</span>
+                    <div class="course-modules">
+                        <span class="course-module">Interacción alimento-medicamento</span>
+                        <span class="course-module">Climaterio y micronutrición</span>
+                        <span class="course-module">Nutrición y deporte</span>
+                        <span class="course-module">Omegas, Vitamina D y Magnesio</span>
+                        <span class="course-module">Alimentación en estrés, ansiedad e insomnio</span>
+                        <span class="course-module">Patologías digestivas y suplementación nutricional</span>
+                        <span class="course-module">Microbiota y sistema inmunitario</span>
+                        <span class="course-module">SPM's como nuevos mediadores lipídicos</span>
+                        <span class="course-module">Obesidad y dolor articular</span>
+                        <span class="course-module">Menopausia</span>
+                    </div>
+                </div>
+
+                <p class="training-group-title">Dermofarmacia y fitoterapia</p>
+
+                <div class="course-item">
+                    <span class="course-name">Fitoterapia y Aceites Esenciales</span>
+                    <span class="course-meta">Oct – Nov 2019</span>
+                </div>
+                <div class="course-item">
+                    <span class="course-name">Dermofarmacia</span>
+                    <span class="course-meta">Abr 2024 – Oct 2025</span>
+                    <div class="course-modules">
+                        <span class="course-module">Antienvejecimiento</span>
+                        <span class="course-module">Protección solar</span>
+                        <span class="course-module">Dermatitis atópica</span>
+                        <span class="course-module">Rosácea</span>
+                        <span class="course-module">Caída capilar</span>
+                        <span class="course-module">Alergia</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="footer">
+        <p>&copy; <script>document.write(new Date().getFullYear());</script> Victoria Horrillo González | Farmacéutica</p>
+    </div> -->
+</body>
+</html>
