@@ -1,4 +1,4 @@
-# Editor persistente para `index.html` y `victoria_farmacia.html`
+# Editor persistente para `victoria.html` y `victoria_farmacia.html`
 
 ## Qué permite
 - Editar el texto visible del CV directamente sobre la página.
@@ -8,7 +8,7 @@
 - Imprimir o guardar como PDF con un botón flotante.
 
 ## Cómo usarlo
-1. Abre `index.html` o `victoria_farmacia.html`.
+1. Abre `victoria.html` o `victoria_farmacia.html`.
 2. Pulsa **Personalizar CV**.
 3. Usa **Editar contenido** para modificar textos.
 4. Ajusta colores y tamaños desde el panel.
@@ -16,8 +16,8 @@
 6. Usa **🖨 PDF** para imprimir o guardar como PDF.
 
 ## Navegación
-- `index.html` actúa como portada principal para GitHub Pages.
-- Hay botones de navegación para cambiar entre el CV hospitalario y el CV de oficina de farmacia.
+- `index.html` queda como portada principal (CV de Manuel).
+- Hay botones de navegación solo entre `victoria.html` y `victoria_farmacia.html`.
 - Esa navegación no aparece al imprimir.
 
 ## Persistencia

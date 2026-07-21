@@ -3,376 +3,247 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Victoria Horrillo González - Farmacéutica</title>
+    <title>Manuel Horrillo Diestro - Desarrollador Full Stack</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* ── Paleta sanitaria ── */
-        :root {
-            --primary-color: #1a3a35;
-            --secondary-color: #2a9d8f;
-            --accent-color: #1a3a35;
-            --highlight-bg: #e6f5f4;
-            --highlight-border: #a8ddd8;
-            --sidebar-text-color: #ffffff;
-            --sidebar-muted-text: #d9f3ef;
-            --page-background: #f5f7fa;
-            --card-background: #ffffff;
-            --tag-bg: #2f6f67;
-            --tag-border: #59b8ae;
-            --tag-text: #ffffff;
-            --module-bg: #f0faf9;
-            --module-border: #c8ebe8;
-            --module-text: #666666;
-        }
-
-        /* ── Cursos compactos (igual que luisa.html) ── */
-        .course-item {
-            display: flex;
-            flex-direction: column;
-            padding: 0.4rem 0;
-            border-bottom: 1px solid #eaeaea;
-        }
-        .course-item:last-child {
-            border-bottom: none;
-        }
-        .course-name {
-            font-weight: 600;
-            color: var(--primary-color);
-            font-size: 0.92rem;
-        }
-        .course-meta {
-            font-size: 0.82rem;
-            color: var(--gray-text);
-            margin-top: 0.1rem;
-        }
-
-        /* ── Módulos dentro de un curso ── */
-        .course-modules {
-            margin: 0.3rem 0 0 1rem;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.25rem 0.6rem;
-        }
-        .course-module {
-            font-size: 0.78rem;
-            color: var(--module-text);
-            padding: 0.1rem 0.5rem;
-            background-color: var(--module-bg);
-            border: 1px solid var(--module-border);
-            border-radius: 10px;
-        }
-
-        /* ── Separador de grupos de formación ── */
-        .training-group-title {
-            font-size: 0.88rem;
-            font-weight: bold;
-            color: var(--secondary-color);
-            margin: 1rem 0 0.3rem 0;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            border-bottom: 1px solid #c8ebe8;
-            padding-bottom: 0.2rem;
-        }
-
-        /* ── Formación académica sidebar ── */
-        .edu-item {
-            margin-bottom: 0.9rem;
-        }
-        .edu-item .edu-degree {
-            font-size: 0.9rem;
-            font-weight: bold;
-            color: var(--secondary-color);
-            line-height: 1.3;
-        }
-        .edu-item .edu-detail {
-            font-size: 0.82rem;
-            color: rgba(255,255,255,0.85);
-        }
-
-        /* ── Competencias como tags ── */
-        .competency-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.4rem;
-            margin-top: 0.3rem;
-        }
-        .competency-tag {
-            font-size: 0.76rem;
-            background-color: var(--tag-bg);
-            color: var(--tag-text);
-            padding: 0.18rem 0.5rem;
-            border-radius: 12px;
-            border: 1px solid var(--tag-border);
-        }
-
-        /* ── Espaciado experiencia ── */
-        .job-item {
-            margin-bottom: 1.6rem;
-            padding-bottom: 1.5rem;
-        }
-
-        /* ── Iconos de contacto en color teal del CV ── */
-        .sidebar .contact-icon {
-            filter: brightness(0) invert(56%) sepia(40%) saturate(600%) hue-rotate(130deg) brightness(1.1);
-        }
-
-        /* ── Overrides de color ── */
-        .sidebar-heading::after {
-            background-color: var(--secondary-color);
-        }
-        .sidebar-heading {
-            color: var(--secondary-color);
-        }
-        .section-divider {
-            background-color: var(--secondary-color);
-        }
-        .job-company {
-            color: var(--secondary-color);
-        }
-        a {
-            color: var(--secondary-color);
-        }
-
-        @media print {
-            body { background-color: white; }
-            .cv-container { box-shadow: none; }
-        }
-    </style>
-    <link rel="stylesheet" href="cv-editor.css">
 </head>
-<body data-cv-key="victoria-hospital" data-cv-version="1" data-cv-label="Victoria Hospitalario">
-    <nav class="cv-page-nav" aria-label="Navegación entre currículums de Victoria">
-        <a class="cv-page-nav-link is-active" href="index.html" aria-current="page">CV hospitalario</a>
-        <a class="cv-page-nav-link" href="victoria_farmacia.html">CV oficina de farmacia</a>
-    </nav>
+<body>
     <div class="cv-container">
         <div class="sidebar">
-            <img class="profile-img" src="imagenes/victoria.jpg" alt="Victoria Horrillo González">
-
+            <img class="profile-img" src="imagenes/perfil.jpg" alt="Manuel Horrillo Diestro">
+            
             <div class="sidebar-section">
                 <h2 class="sidebar-heading">Contacto</h2>
                 <div class="contact-item">
                     <object class="contact-icon" data="iconos/phone.svg" type="image/svg+xml"></object>
-                    <span class="contact-text">699 455 688</span>
-                </div>
-                <div class="contact-item">
-                    <object class="contact-icon" data="iconos/mail.svg" type="image/svg+xml"></object>
-                    <span class="contact-text">victhorr222@gmail.com</span>
+                    <span class="contact-text">687360098</span>
                 </div>
                 <div class="contact-item">
                     <object class="contact-icon" data="iconos/map-pin.svg" type="image/svg+xml"></object>
-                    <span class="contact-text">Madrid, España</span>
+                    <span class="contact-text">Badajoz, España</span>
                 </div>
+                <div class="contact-item">
+                    <object class="contact-icon" data="iconos/mail.svg" type="image/svg+xml"></object>
+                    <a href="mailto:manuhddev@gmail.com" class="contact-text">manuhddev@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <object class="contact-icon" data="iconos/linkedin.svg" type="image/svg+xml"></object>
+                    <a href="https://www.linkedin.com/in/manuel-horrillo-diestro-52015a373/" class="contact-text" target="_blank">LinkedIn</a>
+                </div>
+                <div class="contact-item">
+                    <object class="contact-icon" data="iconos/icons8-github-50.png"></object>
+                    <a href="https://github.com/ManuHDdev" class="contact-text" target="_blank">GitHub</a>
+                </div>
+                <!-- <div>
+                    <a href="luisa.html">Maemia</a>
+                </div> -->
             </div>
 
             <div class="sidebar-section">
-                <h2 class="sidebar-heading">Competencias clave</h2>
-                <div class="competency-tags">
-                    <span class="competency-tag">Atención farmacéutica</span>
-                    <span class="competency-tag">Uso racional del medicamento</span>
-                    <span class="competency-tag">SPD</span>
-                    <span class="competency-tag">Dispensación y validación de recetas</span>
-                    <span class="competency-tag">Control de estupefacientes</span>
-                    <span class="competency-tag">Análisis clínicos</span>
-                    <span class="competency-tag">Receta electrónica</span>
-                    <span class="competency-tag">Gestión de stock y caducidades</span>
-                    <span class="competency-tag">Formulación magistral</span>
-                    <span class="competency-tag">Farmacoterapia</span>
-                    <span class="competency-tag">BOT PLUS</span>
-                    <span class="competency-tag">Educación sanitaria</span>
-                </div>
+                <h2 class="sidebar-heading">Portafolio</h2>
+                <a class="portfolio-link" href="https://manuhddev.github.io/Portafolio/" target="_blank">→ Ver portafolio completo</a>
             </div>
-
+            
             <div class="sidebar-section">
-                <h2 class="sidebar-heading">Formación académica</h2>
-
-                <div class="edu-item">
-                    <p class="edu-degree">Licenciada en Farmacia</p>
-                    <p class="edu-detail">Universidad de Salamanca</p>
-                    <p class="edu-detail">1986 – 1991</p>
-                </div>
-
-                <div class="edu-item">
-                    <p class="edu-degree">Prácticas tuteladas</p>
-                    <p class="edu-detail">Caen, Francia</p>
-                    <p class="edu-detail">1992</p>
-                </div>
-
-                <div class="edu-item">
-                    <p class="edu-degree">Máster en Industria Farmacéutica</p>
-                    <p class="edu-detail">CESIF, Madrid</p>
-                    <p class="edu-detail">1993</p>
-                </div>
-            </div>
-
-            <div class="sidebar-section">
-                <h2 class="sidebar-heading">Informática</h2>
+                <h2 class="sidebar-heading">Habilidades Técnicas</h2>
                 <div class="skill-group">
-                    <h4 class="skill-category">Ofimática</h4>
-                    <p class="skill-list">Microsoft Office 365, Excel nivel avanzado</p>
+                    <h4 class="skill-category">Frontend</h4>
+                    <p class="skill-list">Angular (v8-20, 4+ años), TypeScript, HTML5, CSS3, JavaScript, Angular Material, RxJS</p>
                 </div>
                 <div class="skill-group">
-                    <h4 class="skill-category">Gestión de Farmacia</h4>
-                    <p class="skill-list">Nixfarma, Farmatic, BOT PLUS</p>
+                    <h4 class="skill-category">Backend</h4>
+                    <p class="skill-list">Java (Spring Boot, Spring Security, JPA/Hibernate, Spring Batch), PHP, RESTful APIs, Microservicios, Node.js</p>
+                </div>
+                <div class="skill-group">
+                    <h4 class="skill-category">Bases de Datos</h4>
+                    <p class="skill-list">MySQL, PostgreSQL, SQL Oracle, SQLite, phpMyAdmin</p>
+                </div>
+                <div class="skill-group">
+                    <h4 class="skill-category">Herramientas y DevOps</h4>
+                    <p class="skill-list">Git/GitHub, Docker, SCRUM/Agile, Visual Studio Code, IntelliJ IDEA, Eclipse, Ubuntu Server, Firebase</p>
+                </div>
+                <div class="skill-group">
+                    <h4 class="skill-category">Administración de Sistemas</h4>
+                    <p class="skill-list">Ubuntu Server, configuración y hardening, copias de seguridad automatizadas, monitorización de logs, deployment de aplicaciones, gestión de servicios y puertos</p>
                 </div>
             </div>
-
+            
+            <div class="sidebar-section">
+                <h2 class="sidebar-heading">Formación</h2>
+                <h4 class="education-title">Grado en Ingeniería Informática</h4>
+                <p class="education-specialty">Especialidad: Ingeniería del Software</p>
+                <p class="education-institution">Escuela Politécnica de Cáceres</p>
+                <!-- <p class="education-year">2020 - 2024</p> -->
+            </div>
+            
             <div class="sidebar-section">
                 <h2 class="sidebar-heading">Idiomas</h2>
                 <p class="contact-text"><strong>Español:</strong> Nativo</p>
-                <p class="contact-text"><strong>Inglés:</strong> Nivel básico</p>
-                <p class="contact-text"><strong>Francés:</strong> Nivel funcional</p>
+                <p class="contact-text"><strong>Inglés:</strong> Nivel conversacional (B2)</p>
             </div>
-
+            
+            <div class="sidebar-section">
+                <h2 class="sidebar-heading">Competencias clave</h2>
+                <div class="skill-group">
+                    <h4 class="skill-category">Desarrollo Full Stack</h4>
+                    <p class="skill-list">Experiencia sólida en arquitectura completa de aplicaciones desde cero, tanto frontend como backend, con enfoque en escalabilidad y mantenibilidad.</p>
+                </div>
+                <div class="skill-group">
+                    <h4 class="skill-category">Colaboración con Stakeholders</h4>
+                    <p class="skill-list">Capacidad demostrada para comunicar conceptos técnicos a usuarios no técnicos y traducir requisitos de negocio en soluciones funcionales.</p>
+                </div>
+                <div class="skill-group salto">
+                    <h4 class="skill-category">Metodologías Ágiles</h4>
+                    <p class="skill-list">Implementación práctica de SCRUM y desarrollo iterativo basado en feedback continuo, con entregas frecuentes y mejora continua.</p>
+                </div>
+                <div class="skill-group">
+                    <h4 class="skill-category">Aprendizaje Rápido</h4>
+                    <p class="skill-list">Capacidad para dominar nuevas tecnologías y frameworks de forma autodidacta y aplicarlos efectivamente en entornos de producción.</p>
+                </div>
+            </div>
         </div>
-
+        
         <div class="main-content">
             <div class="header-section">
-                <h1 class="name-title">Victoria Horrillo González</h1>
-                <p class="job-title-main">Farmacéutica | Más de 30 años de experiencia clínica</p>
+                <h1 class="name-title">Manuel Horrillo Diestro</h1>
+                <p class="job-title-main">Desarrollador Full Stack | Angular + Spring Boot</p>
                 <div class="section-divider"></div>
             </div>
-
+            
             <div class="main-section">
                 <h2 class="section-title">Perfil Profesional</h2>
                 <p class="profile-description">
-                    <strong>Farmacéutica colegiada</strong> con 30 años de ejercicio profesional como titular de oficina de farmacia. A lo largo de mi trayectoria he desarrollado un conocimiento sólido en farmacoterapia, uso racional del medicamento y atención directa al paciente, trabajando a diario con la complejidad real de la práctica clínica.
-                    Afronto este nuevo reto con entusiasmo y la convicción de que la experiencia acumulada en la dispensación, el seguimiento farmacoterapéutico y la gestión de medicamentos es un activo directo para el entorno hospitalario. Estoy preparada para incorporarme al equipo, aprender los protocolos específicos del servicio y aportar desde el primer día.
+                    <strong>Desarrollador Full Stack</strong> con más de 4 años trabajando con Java y Angular entre proyectos freelance y experiencia profesional. 
+                    En los últimos años he estado involucrado en el desarrollo de aplicaciones empresariales, destacando un sistema completo de gestión logística utilizado por el distribuidor oficial de Chanel en España.
+                    Me tomo muy en serio la calidad del código, la organización de la arquitectura y el impacto real que tiene lo que programo en el día a día de una empresa.
+                    Busco un entorno donde seguir creciendo, aportar lo que sé y aprender de un equipo con más camino recorrido.
                 </p>
             </div>
-
+            
             <div class="main-section">
                 <h2 class="section-title">Experiencia Profesional</h2>
-
+                
                 <div class="job-item">
                     <div class="job-header">
-                        <h3 class="job-title">Titular de Oficina de Farmacia</h3>
-                        <span class="job-date">1993 – 2023</span>
+                        <h3 class="job-title">Desarrollador Full Stack</h3>
+                        <span class="job-date">Noviembre 2023 - Noviembre 2025</span>
                     </div>
-                    <p class="job-company">Farmacia Arganzuela, Madrid (2021-2023) · Farmacia Aluche, Madrid (1999-2021) · Farmacia Plasenzuela, Cáceres (1993-1999)</p>
+                    <p class="job-company">DELIM (Distribuidor Oficial Chanel España) - Departamento de Sistemas | Madrid (Híbrido)</p>
+                    
                     <div class="job-description">
-                        <p style="margin-bottom: 0.8rem; text-align: justify;">
-                            Más de 25 años al frente de la gestión integral de oficinas de farmacia, combinando responsabilidad clínica y empresarial. Las tareas desarrolladas de forma continuada incluyen:
+                        <p style="margin-bottom: 15px; text-align: justify;">
+                            Desarrollador principal de un sistema integral de gestión logística que actualmente controla todo el inventario 
+                            de productos Chanel distribuidos en España. Responsable del diseño, desarrollo, despliegue y mantenimiento 
+                            de la aplicación, utilizada diariamente por múltiples departamentos de la empresa.
                         </p>
+                        
+                        <h4>Responsabilidades y logros:</h4>
                         <ul>
-                            <li><strong>Dispensación y validación de recetas</strong>, incluyendo receta electrónica, estupefacientes y psicotrópicos, con control del libro recetario.</li>
-                            <li><strong>Seguimiento farmacoterapéutico</strong> y consejo profesional individualizado, con especial atención al paciente polimedicado y al uso racional del medicamento.</li>
-                            <li><strong>Implantación de SPD</strong> (Sistema Personalizado de Dosificación) como herramienta de adherencia y seguridad en la medicación.</li>
-                            <li><strong>Gestión de stock, caducidades y trazabilidad</strong> de medicamentos; gestión diaria de pedidos y negociación con proveedores.</li>
-                            <li><strong>Educación sanitaria activa</strong> a pacientes en patologías crónicas, nutrición, dermatología y salud bucodental.</li>
-                            <li><strong>Análisis de compras, gastos y facturación</strong> de recetas. Manejo de BOT PLUS.</li>
+                            <li><strong>Arquitectura y desarrollo full stack:</strong> Diseñé y desarrollé desde cero una aplicación web completa con Angular (migrando y desarrollando progresivamente desde v16 hasta v20) y Spring Boot 3.x, implementando arquitectura modular y escalable</li>
+                            <li><strong>Backend robusto y seguro:</strong> Desarrollé API REST con Spring Boot, implementando Spring Security con Keycloak, validaciones complejas, manejo de excepciones centralizado y logging estructurado</li>
+                            <li><strong>Gestión de datos compleja:</strong> Diseñé el modelo de base de datos MySQL, optimicé queries y desarrollé sistema de importación masiva capaz de procesar miles de registros con validaciones automáticas</li>
+                            <li><strong>Digitalización y automatización:</strong> Eliminé procesos manuales basados en Excel, creando flujos automatizados que redujeron errores en un 95% y tiempo de procesamiento en un 70%</li>
+                            <li><strong>Sistema de permisos avanzado:</strong> Implementé control de acceso basado en roles con granularidad a nivel de funcionalidad, integrando Keycloak para gestión de identidades</li>
+                            <li><strong>UX/UI optimizada:</strong> Diseñé interfaces intuitivas con Angular Material, implementando autocompletado inteligente, validaciones en tiempo real y feedback visual inmediato</li>
+                            <li><strong>Metodología ágil y colaboración:</strong> Trabajé en sprints semanales con usuarios finales, recogiendo feedback continuo e iterando rápidamente sobre funcionalidades</li>
+                            <li><strong>DevOps y producción:</strong> Gestioné despliegues en servidor Ubuntu, configuré backups automáticos, monitoricé logs y aseguré disponibilidad 24/7 del sistema</li>
                         </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="main-section">
-                <h2 class="section-title">Formación Continuada</h2>
-
-                <p class="training-group-title">Farmacoterapia y clínica</p>
-
-                <!-- <div class="course-item">
-                    <span class="course-name">Implantación SPD en Oficina de Farmacia</span>
-                    <span class="course-meta">2025 · 60 h</span>
-                </div> -->
-                <div class="course-item">
-                    <span class="course-name">Cómo implantar un Sistema Personalizado de Dosificación en la Oficina de Farmacia</span>
-                    <span class="course-meta">Feb – Mar 2025</span>
-                </div>
-                <div class="course-item">
-                    <span class="course-name">Programa de Formación en Adicciones</span>
-                    <span class="course-meta">Feb - May 2025</span>
-                </div>
-                <!-- <div class="course-item">
-                    <span class="course-name">Urgencias para Farmacéuticos</span>
-                    <span class="course-meta">Oct 2006 · 20 h · 2,9 créditos CFCPS Madrid</span>
-                </div> -->
-                <!-- <div class="course-item">
-                    <span class="course-name">Valoración e Interpretación de Análisis Clínicos</span>
-                    <span class="course-meta">2000 · 20 h</span>
-                </div> -->
-                <!-- <div class="course-item">
-                    <span class="course-name">Valoración e Interpretación de Análisis Clínicos (FORCEM)</span>
-                    <span class="course-meta">Mar – Abr 2003 · 10 h · 1,4 créditos CFCPS Madrid</span>
-                </div> -->
-                <!-- <div class="course-item">
-                    <span class="course-name">El Consejo Farmacéutico en Diabetes Tipo II</span>
-                    <span class="course-meta">Nov 2004 – Jul 2005 · 18 h</span>
-                </div> -->
-                <div class="course-item">
-                    <span class="course-name">Consejo Farmacéutico en Salud Bucodental</span>
-                    <span class="course-meta">Abr 2025</span>
-                </div>
-                <!-- <div class="course-item">
-                    <span class="course-name">Adaptación al Real Decreto 175/2001: Formulación Magistral</span>
-                    <span class="course-meta">May 2003 · 2 h</span>
-                </div> -->
-                <!-- <div class="course-item">
-                    <span class="course-name">Receta Electrónica</span>
-                    <span class="course-meta">Abr – May 2015 · 15 h · 3 créditos CFCPS</span>
-                </div> -->
-                <div class="course-item">
-                    <span class="course-name">Curso Salud femenina</span>
-                    <span class="course-meta">Jun – Jul 2025</span>
-                </div>
-
-                <br><br><br>
-
-                <p class="training-group-title">Nutrición y micronutrición</p>
-
-                <div class="course-item">
-                    <span class="course-name">Especialización en Consejo Nutricional y Complementos Nutricionales en Oficina de Farmacia</span>
-                    <span class="course-meta">Abr 2024 – Oct 2025</span>
-                    <div class="course-modules">
-                        <span class="course-module">Interacción alimento-medicamento</span>
-                        <span class="course-module">Climaterio y micronutrición</span>
-                        <span class="course-module">Nutrición y deporte</span>
-                        <span class="course-module">Omegas, Vitamina D y Magnesio</span>
-                        <span class="course-module">Alimentación en estrés, ansiedad e insomnio</span>
-                        <span class="course-module">Patologías digestivas y suplementación nutricional</span>
-                        <span class="course-module">Microbiota y sistema inmunitario</span>
-                        <span class="course-module">SPM's como nuevos mediadores lipídicos</span>
-                        <span class="course-module">Obesidad y dolor articular</span>
-                        <span class="course-module">Menopausia</span>
-                    </div>
-                </div>
-
-                <p class="training-group-title">Dermofarmacia y fitoterapia</p>
-
-                <!-- <div class="course-item">
-                    <span class="course-name">Talleres Dermatológicos: Cuidados Básicos de la Piel</span>
-                    <span class="course-meta">Abr 2008 · 2 h</span>
-                </div>
-                <div class="course-item">
-                    <span class="course-name">Talleres Dermatológicos: ABC de la Protección Solar</span>
-                    <span class="course-meta">May 2008 · 2 h</span>
-                </div> -->
-                <div class="course-item">
-                    <span class="course-name">Fitoterapia y Aceites Esenciales</span>
-                    <span class="course-meta">Oct – Nov 2019</span>
-                </div>
-                <div class="course-item">
-                    <span class="course-name">Dermofarmacia</span>
-                    <span class="course-meta">Abr 2024 – Oct 2025</span>
-                    <div class="course-modules">
-                        <span class="course-module">Antienvejecimiento</span>
-                        <span class="course-module">Protección solar</span>
-                        <span class="course-module">Dermatitis atópica</span>
-                        <span class="course-module">Rosácea</span>
-                        <span class="course-module">Caída capilar</span>
-                        <span class="course-module">Alergia</span>
+                        
+                        <div style="margin-top: 15px;">
+                            <strong>Stack tecnológico:</strong> Angular 16-20, TypeScript, RxJS, Angular Material, Spring Boot 3.x, Java 17, MySQL, 
+                            Spring Security, Keycloak, API REST, Git, Ubuntu Server, Docker
+                        </div>
+                        
+                        <p style="margin-top: 15px; font-style: italic; text-align: justify;">
+                            <strong>Motivo de cambio:</strong> Busco incorporarme a un equipo de desarrollo más amplio donde pueda aprender de otros profesionales senior, 
+                            participar en proyectos diversos con diferentes arquitecturas y tecnologías, y continuar mi crecimiento profesional en un entorno colaborativo 
+                            con mejores prácticas de la industria.
+                        </p>
                     </div>
                 </div>
 
                 
 
+                <!-- EXPIDE -->
+                <div class="job-item">
+                    <div class="job-header">
+                        <h3 class="job-title">Desarrollador de Sistemas</h3>
+                        <span class="job-date">Julio 2022 – Septiembre 2023</span>
+                    </div>
+                    <p class="job-company">Expide | Lobón, Badajoz</p>
+                    
+                    <h4>Gestión y Desarrollo sobre Dolibarr ERP</h4>
+                    <div class="job-description">
+                        <ul>
+                            <li>Personalización del ERP para diferentes clientes con cambios visuales y funcionales.</li>
+                            <li>Optimización de flujos internos para reducir tareas repetitivas.</li>
+                            <li>Desarrollo de módulos en PHP: generación de PDFs, automatizaciones y mejoras en TPV.</li>
+                            <li>Configuración y mantenimiento de bases de datos MySQL.</li>
+                            <li>Soporte evolutivo continuado a proyectos ya implantados.</li>
+                        </ul>
+                        
+                        <p><strong>Tecnologías:</strong> PHP, Dolibarr, MySQL, SiteGround</p>
+                    </div>
+                </div>
+
+                <!-- FREELANCE -->
+                <div class="job-item">
+                    <div class="job-header">
+                        <h3 class="job-title">Desarrollador Full Stack Freelance</h3>
+                        <span class="job-date">2021 – 2023</span>
+                    </div>
+                    <p class="job-company">Proyectos independientes</p>
+                    
+                    <div class="job-description">
+                        <p>Trabajé de forma autónoma creando aplicaciones web para diferentes clientes locales y pequeños negocios.</p>
+                        <ul>
+                            <li>Desarrollo de APIs REST en Spring Boot para apps internas.</li>
+                            <li>Aplicaciones web completas con Angular y MySQL.</li>
+                            <li>Automatización de tareas administrativas para negocios pequeños, como organización y generación de facturas en PDF entre otras.</li>
+                            <li>Implementación de paneles de administración sencillos y escalables.</li>
+                        </ul>
+                        
+                        <p><strong>Tecnologías:</strong> Angular, TypeScript, Spring Boot, Java, MySQL</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="main-section">
+                <h2 class="section-title">Proyectos Destacados</h2>
+                
+                <div class="project-item">
+                    <h3 class="project-title">Sistema de Inventario Chanel España</h3>
+                    <p class="project-description">
+                        Aplicación web que centraliza todo el inventario, movimientos y trazabilidad de productos Chanel distribuidos por DELIM. 
+                        El sistema eliminó la dependencia de Excel y se usa a diario por el equipo logístico.
+                    </p>
+                    <p>
+                        <strong>Metodología:</strong> Desarrollo iterativo con feedback directo del personal logístico.
+                    </p>
+                    <a class="project-link" href="https://manuhddev.github.io/Portafolio/" target="_blank">→ Ver proyecto en portafolio</a>
+                </div>
+                
+                <div class="project-item">
+                    <h3 class="project-title">Página Web Centro de Mayores Coexate</h3>
+                    <p class="project-description">
+                        Página accesible y sencilla para un público de edad avanzada. Diseño limpio, navegación fácil y totalmente responsive.
+                    </p>
+                    <a class="project-link" href="https://coexate.web.app/" target="_blank">→ Ver proyecto</a>
+                </div>
+                
+                <div class="project-item">
+                    <h3 class="project-title">Web Bobble Premier League</h3>
+                    <p class="project-description">
+                        Proyecto personal para gestionar torneos, estadísticas y clasificaciones de una comunidad gaming. 
+                        Base de datos creada con Google Sheets API.
+                    </p>
+                    <a class="project-link" href="https://bobblepremierleagueoficial.web.app" target="_blank">→ Ver proyecto</a>
+                </div>
             </div>
         </div>
     </div>
-
-    <!-- <div class="footer">
-        <p>&copy; <script>document.write(new Date().getFullYear());</script> Victoria Horrillo González | Farmacéutica</p>
-    </div> -->
-    <script src="cv-editor.js"></script>
+    
+    <div class="footer">
+        <p>&copy; <script>document.write(new Date().getFullYear());</script> Manuel Horrillo Diestro | Desarrollador Full Stack</p>
+    </div>
 </body>
 </html>

@@ -35,7 +35,14 @@
                 { value: 'Arial, Helvetica, sans-serif', label: 'Arial' },
                 { value: 'Georgia, Times New Roman, serif', label: 'Georgia' },
                 { value: 'Trebuchet MS, Arial, sans-serif', label: 'Trebuchet MS' },
-                { value: 'Verdana, Geneva, sans-serif', label: 'Verdana' }
+                { value: 'Verdana, Geneva, sans-serif', label: 'Verdana' },
+                { value: 'Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif', label: 'Calibri' },
+                { value: 'Cambria, Georgia, serif', label: 'Cambria' },
+                { value: 'Garamond, Baskerville, Georgia, serif', label: 'Garamond' },
+                { value: 'Palatino Linotype, Book Antiqua, Palatino, serif', label: 'Palatino' },
+                { value: 'Tahoma, Geneva, Verdana, sans-serif', label: 'Tahoma' },
+                { value: 'Helvetica Neue, Helvetica, Arial, sans-serif', label: 'Helvetica Neue' },
+                { value: 'Century Gothic, Futura, Arial, sans-serif', label: 'Century Gothic' }
             ],
             defaultValue: 'Segoe UI, Arial, sans-serif'
         },

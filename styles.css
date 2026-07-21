@@ -111,6 +111,8 @@ a:hover {
     width: 20px;
     height: 20px;
     margin-right: 0.8rem;
+    /* Tinte azul/cian para iconos del bloque de contacto */
+    filter: brightness(0) saturate(100%) invert(60%) sepia(86%) saturate(1487%) hue-rotate(156deg) brightness(97%) contrast(101%);
 }
 
 .contact-text {
