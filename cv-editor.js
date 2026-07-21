@@ -188,7 +188,7 @@
             cssVar: '--tag-bg',
             type: 'color',
             group: 'Colores',
-            defaultValue: '#dbeafe'
+            defaultValue: '#6c008a'
         },
         {
             key: 'tag-text',
