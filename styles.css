@@ -459,8 +459,43 @@ a:hover {
 }
 
 @media print {
-    /* .salto {
-        margin-top: 2rem;
-        page-break-before: always;
-    } */
+    body {
+        background-color: white;
+    }
+
+    .cv-container {
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        box-shadow: none;
+    }
+
+    .sidebar {
+        width: 30%;
+        padding-bottom: 2rem;
+    }
+
+    .main-content {
+        width: 70%;
+    }
+
+    .job-header {
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    .sidebar-section,
+    .skill-group,
+    .job-item,
+    .project-item {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    .section-title,
+    .job-header,
+    .sidebar-heading {
+        break-after: avoid;
+        page-break-after: avoid;
+    }
 }
