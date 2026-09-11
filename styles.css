@@ -318,68 +318,24 @@ a:hover {
 }
 
 /* Proyectos destacados */
-.project-item {
-    margin-bottom: 0.9rem;
-    padding-bottom: 0.9rem;
-    border-bottom: 1px solid #eaeaea;
+.project-list {
+    list-style: none;
 }
 
-.project-item:last-child {
+.project-list li {
+    margin-bottom: 0.5rem;
+    font-size: 0.92rem;
+    line-height: 1.5;
+}
+
+.project-list li:last-child {
     margin-bottom: 0;
-    padding-bottom: 0;
-    border-bottom: none;
-}
-
-.featured-project {
-    border-color: var(--success-color);
-    background-color: rgba(34, 197, 94, 0.05);
-    position: relative;
-}
-
-.project-title {
-    font-weight: bold;
-    font-size: 1rem;
-    margin-bottom: 0.3rem;
-    color: var(--primary-color);
-}
-
-.production-badge {
-    display: inline-block;
-    background-color: var(--success-color);
-    color: white;
-    padding: 0.2rem 0.8rem;
-    border-radius: 15px;
-    font-size: 0.8rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-
-.project-description {
-    margin-bottom: 0.4rem;
-    font-size: 0.9rem;
-    line-height: 1.45;
-    text-align: justify;
-}
-
-.project-collaboration {
-    margin-bottom: 1rem;
-    padding: 0.8rem;
-    background-color: rgba(52, 129, 232, 0.05);
-    border-left: 3px solid var(--secondary-color);
-    border-radius: 0 var(--border-radius) var(--border-radius) 0;
-}
-
-.project-tech-note {
-    margin-bottom: 1rem;
-    font-style: italic;
-    color: var(--gray-text);
 }
 
 .project-link {
-    display: inline-block;
+    display: inline;
     color: var(--secondary-color);
     font-weight: 600;
-    margin-top: 0.5rem;
 }
 
 .project-link:hover {
